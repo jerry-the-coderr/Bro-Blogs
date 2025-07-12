@@ -1,0 +1,101 @@
+:root{
+    --dark: hsl(240, 10%, 16%) ;
+    --light2 : hsla(240, 69%, 91%, 0.644);
+    --light : hsl(0,0%,95%);
+    --primary : hsl(196, 55%, 58%);
+    --primary2 : hsl(196, 63%, 75%);
+    --secondary : hsla(60, 71%, 70%, 0.926);
+}
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  section {
+    scroll-snap-align: start;
+  }
+
+  body{
+    margin: 0px;
+    background-color: var(--light);
+  }
+  #header{
+    color: var(--light);
+    background-color: var(--dark);
+    font-size: 1.5em;
+
+    margin: 0px;    
+    top: 0px;
+    position:absolute;
+
+    display: block;
+    width: 100%;
+
+    text-indent: 30px;
+    user-select: none;
+  }
+
+  main{
+    margin-top: 100px;
+    padding: 30px;
+  }
+
+  h2{
+    color: var(--dark);
+    padding-top: 20px;
+  }
+
+  .justify{
+    text-align: justify;
+  }
+  .bold{
+    font-weight: bold;
+    color: hsl(0,0%,25%);
+  }
+
+  b,strong{
+    color: hsl(0,0%,25%);
+  }
+
+  #content{
+    line-height: 25px;
+    font-weight: 500;
+    color: hsl(0,0%,15%);
+  }
+  em{
+    color: hsl(212, 81%, 67%);
+  }
+  b{
+    color: hsl(0, 1%, 40%);
+    font-weight: 600;
+}
+
+footer{
+    background-color: var(--dark);
+    text-align: center;
+    padding: 20px;
+    margin: none;
+    user-select: none;
+    color: grey;
+    max-height: 30px;
+}
+footer p a{
+    text-decoration: none;
+    color: rgb(178, 175, 175);
+}
+
+.back a{
+    color: var(--dark);
+    text-decoration: none;
+    font-weight: 560;
+}
+.back a:hover{
+    color: white;
+    background-color: var(--dark);
+}
+.back a:active{
+    color: grey;
+    background-color: transparent;
+    font-weight: bold;
+}
